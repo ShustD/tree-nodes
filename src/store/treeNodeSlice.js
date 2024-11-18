@@ -6,7 +6,7 @@ export const getTreeNodes = createAsyncThunk(
   async (rejectWithValue) => {
     const treeName = 'myProjectTree'
     try {
-      const response = await fetch(`https://cors-anywhere.herokuapp.com/https://test.vmarmysh.com/api.user.tree.get?treeName=${treeName}`, {
+      const response = await fetch(`https://test.vmarmysh.com/api.user.tree.get?treeName=${treeName}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
