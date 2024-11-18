@@ -1,0 +1,62 @@
+.container {
+    font-family: Arial, sans-serif;
+    min-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.node {
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.node:hover {
+    background-color: #f9f9f9;
+}
+
+.childrenContainer {
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+    margin-left: 10px;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.toggleIcon {
+    margin-right: 10px;
+    cursor: pointer;
+    color: #888;
+}
+
+.nodeText {
+    font-size: 14px;
+    color: #333;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    svg {
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+        transition: .3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+.node:hover .actions svg {
+    opacity: 1;
+}

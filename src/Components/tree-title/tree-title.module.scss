@@ -1,0 +1,17 @@
+.title_contaliner {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;    
+    svg {
+        cursor: pointer;
+        opacity: 0;
+        height: 45px;
+        width: 45px;
+        transition: .3s;
+    }
+}
+
+.title_contaliner:hover svg {
+    opacity: 1;
+}
